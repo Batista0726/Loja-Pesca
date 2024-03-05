@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="carrinho.js"></script>
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+
+<body>
+    <div id="error" class="error-modal">
+        <p>Insira um nome para começar</p>
+        <button class="error-btn" onclick="fechar()">Entendi!</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button onclick="window.location.href='../Menu/menu.html'" type="button" class="btn btn-dark">Menu</button>
+        <button onclick="window.location.href='../Itens/itens.html'" type="button" class="btn btn-dark">Itens</button>
+    </div>
+    <h1>Carrinho</h1>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Insira seu nome">
+    </div>
+    <button type="button" class="btn btn-outline-dark" onclick="comecar()">Começar</button>
+
+    <div id="select-div">
+        <h2>Olá <span id="nomePrint"></span>, vamos começar a escolher seu Kit para Pesca</h2>
+        <h3>Varas de Pesca</h3>
+        <select class="form-select" aria-label="Default select example" id="selectVara">
+            <option selected>Selecione uma Vara de pesca</option>
+            <option value="Vara1">Vara Longa</option>
+            <option value="Vara2">Vara Profissional</option>
+            <option value="Vara3">Vara Infantil</option>
+            <option value="Vara4">Vara de Bambu</option>
+            <option value="Vara5">Vara com Molinete</option>
+        </select>
+        <h3>Iscas</h3>
+        <select class="form-select" aria-label="Default select example" id="selectIsca">
+            <option selected>Selecione uma Isca</option>
+            <option value="Isca1">Isca Tucunaré</option>
+            <option value="Isca2">Isca Whisky</option>
+            <option value="Isca3">Isca Bola</option>
+            <option value="Isca4">Isca Irmão do bola</option>
+            <option value="Isca5">Isca Sushi</option>
+        </select>
+        <h3>Redes</h3>
+        <select class="form-select" aria-label="Default select example" id="selectRede">
+            <option selected>Selecione uma Rede</option>
+            <option value="Rede1">Rede Gato</option>
+            <option value="Rede2">Rede Barriga</option>
+            <option value="Rede3">Rede Enguia</option>
+            <option value="Rede4">Rede Água-Viva</option>
+            <option value="Rede5">Rede Emaranhada</option>
+        </select>
+        <h3>Boias</h3>
+        <select class="form-select" aria-label="Default select example" id="selectBoia">
+            <option selected>Selecione uma Boia</option>
+            <option value="Boia1">Boia Maça Verde</option>
+            <option value="Boia2">Boia Coxinha</option>
+            <option value="Boia3">Boia Arpão</option>
+            <option value="Boia4">Boia Butijão</option>
+            <option value="Boia5">Boia Abelha</option>
+        </select>
+        <h3>Anzol</h3>
+        <select class="form-select" aria-label="Default select example" id="selectAnzol">
+            <option selected>Selecione um Anzol</option>
+            <option value="Anzol1">Anzol Bob</option>
+            <option value="Anzol2">Anzol Triplex</option>
+            <option value="Anzol3">Anzol Básico</option>
+            <option value="Anzol4">Anzol Doze Mola</option>
+            <option value="Anzol5">Anzol Barrigudo</option>
+        </select>
+        <div>
+            <button class="btn btn-success" type="button" onclick="calcularTotal()">Fazer pedido</button>
+            <button class="btn btn-outline-secondary" type="button" onclick="limpar()">Limpar</button>
+        </div>
+        <div>
+            <span class="badge bg-primary">Total:</span>
+            <span class="badge bg-secondary" id="resultado"></span>
+        </div>
+    </div>
+</body>
+
+</html>
