@@ -41,7 +41,10 @@ h1, h2 {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    
+}
+
+.carousel-caption{
+    color: black;
 }
 
 @media (width >=800px) {
