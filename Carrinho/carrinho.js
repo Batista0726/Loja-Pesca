@@ -64,59 +64,59 @@ function calcularTotal(){
             Isca = 20.00;
             break;
             case "Isca2":
-            total =  total + 8.90;
-            Isca = 8.90;
+            total =  total + 50.00;
+            Isca = 50.00;
             break;
             case "Isca3":
-            total =  total + 6.90;
-            Isca = 6.90;
+            total =  total + 20.00;
+            Isca = 20.00;
             break;
             case "Isca4":
-            total =  total + 8.90;
-            Isca = 8.90;
+            total =  total + 20.00;
+            Isca = 20.00;
             break;
             case "Isca5":
-            total =  total + 6.90;
-            Isca = 6.90;
+            total =  total + 30.00;
+            Isca = 30.00;
             break;
 
     }
 
     switch (selectRede.value) {
         case "Rede1":
-            total =  total + 19.90;
-            Rede = 19.90;
+            total =  total + 80.00;
+            Rede = 80.00;
             break;
         case "Rede2":
-            total =  total + 7.90;
-            Rede = 7.90;
+            total =  total + 50.00;
+            Rede = 50.00;
             break;
         case "Rede3":
-            total =  total + 15.90;
-            Rede = 15.90;
+            total =  total + 35.00;
+            Rede = 35.00;
         break;
         case "Rede4":
-            total =  total + 7.90;
-            Rede = 7.90;
+            total =  total + 40.00;
+            Rede = 40.00;
             break;
         case "Rede5":
-            total =  total + 15.90;
-            Rede = 15.90;
+            total =  total + 100.00;
+            Rede = 100.00;
         break;
 
     }
     switch (selectBoia.value) {
         case "Boia1":
-            total =  total + 19.90;
-            Boia = 19.90;
+            total =  total + 3.00;
+            Boia = 3.00;
             break;
         case "Boia2":
-            total =  total + 7.90;
-            Boia = 7.90;
+            total =  total + 2.00;
+            Boia = 2.00;
             break;
         case "Boia3":
-            total =  total + 15.90;
-            Boia = 15.90;
+            total =  total + 6.00;
+            Boia = 6.00;
         break;
         case "Boia4":
             total =  total + 7.90;
