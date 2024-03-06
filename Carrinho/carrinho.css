@@ -65,3 +65,24 @@ body {
     cursor: pointer;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
+.box{
+    background-color: rgb(37, 36, 36);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.box2{
+    background-color: rgb(37, 36, 36);
+    padding: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.dist{
+    padding: 10px;
+}
+
+.dist2{
+    padding: 10px;
+}

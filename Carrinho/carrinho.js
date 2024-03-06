@@ -35,23 +35,23 @@ function calcularTotal(){
     var Anzol = 0;
     
     switch (selectVara.value) {
-        case "Vara1":
+        case "Vara Longa:":
             total =  total + 100.00;
             Vara = 100.00;
             break;
-            case "Vara2":
+            case "Vara Profissional:":
             total =  total + 160.00;
             Vara = 160.00;
             break;
-            case "Vara3":
+            case "Vara Infantil:":
             total =  total + 70.00;
             Vara = 70.00;
             break;
-            case "Vara4":
+            case "Vara de Bambu:":
             total =  total + 20.00;
             Vara = 20.00;
             break;
-            case "Vara5":
+            case "Vara com Molinete:":
             total =  total + 200.00;
             Vara = 200.00;
             break;
@@ -59,23 +59,23 @@ function calcularTotal(){
     }
 
     switch (selectIsca.value) {
-        case "Isca1":
+        case "Isca Tucunaré:":
             total =  total + 20.00;
             Isca = 20.00;
             break;
-            case "Isca2":
+            case "Isca Whisky:":
             total =  total + 50.00;
             Isca = 50.00;
             break;
-            case "Isca3":
+            case "Isca Bola:":
             total =  total + 20.00;
             Isca = 20.00;
             break;
-            case "Isca4":
+            case "Isca Irmão do bola:":
             total =  total + 20.00;
             Isca = 20.00;
             break;
-            case "Isca5":
+            case "Isca Sushi:":
             total =  total + 30.00;
             Isca = 30.00;
             break;
@@ -83,69 +83,69 @@ function calcularTotal(){
     }
 
     switch (selectRede.value) {
-        case "Rede1":
+        case "Rede Gato:":
             total =  total + 80.00;
             Rede = 80.00;
             break;
-        case "Rede2":
+        case "Rede Barriga:":
             total =  total + 50.00;
             Rede = 50.00;
             break;
-        case "Rede3":
+        case "Rede Enguia:":
             total =  total + 35.00;
             Rede = 35.00;
         break;
-        case "Rede4":
+        case "Rede Água-Viva:":
             total =  total + 40.00;
             Rede = 40.00;
             break;
-        case "Rede5":
+        case "Rede Emaranhada:":
             total =  total + 100.00;
             Rede = 100.00;
         break;
 
     }
     switch (selectBoia.value) {
-        case "Boia1":
+        case "Boia Maça Verde:":
             total =  total + 3.00;
             Boia = 3.00;
             break;
-        case "Boia2":
+        case "Boia Coxinha:":
             total =  total + 2.00;
             Boia = 2.00;
             break;
-        case "Boia3":
+        case "Boia Arpão:":
             total =  total + 6.00;
             Boia = 6.00;
         break;
-        case "Boia4":
+        case "Boia Butijão:":
             total =  total + 8.00;
             Boia = 8.00;
             break;
-        case "Boia5":
+        case "Boia Abelha:":
             total =  total + 6.00;
             Boia = 6.00;
         break;
 
     }
     switch (selectAnzol.value) {
-        case "Anzol1":
+        case "Anzol Bob:":
             total =  total + 5.00;
             Anzol = 5.00;
             break;
-        case "Anzol2":
+        case "Anzol Triplex:":
             total =  total + 7.00;
             Anzol = 7.00;
             break;
-        case "Anzol3":
+        case "Anzol Básico:":
             total =  total + 4.00;
             Anzol = 4.00;
         break;
-        case "Anzol4":
+        case "Anzol Doze Mola:":
             total =  total + 10.00;
             Anzol = 10.00;
             break;
-        case "Anzol5":
+        case "Anzol Barrigudo:":
             total =  total + 8.00;
             Anzol = 8.00;
         break;

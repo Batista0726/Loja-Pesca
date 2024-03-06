@@ -32,61 +32,63 @@
     <button type="button" class="btn btn-dark" onclick="comecar()">Começar</button>
 
     <div id="select-div">
+        <div class="box">
         <h2>Olá <span id="nomePrint"></span>, vamos começar a escolher seu Kit para Pesca</h2>
         <h3>Varas de Pesca</h3>
         <select class="form-select" aria-label="Default select example" id="selectVara">
             <option selected>Selecione uma Vara de pesca</option>
-            <option value="Vara1">Vara Longa</option>
-            <option value="Vara2">Vara Profissional</option>
-            <option value="Vara3">Vara Infantil</option>
-            <option value="Vara4">Vara de Bambu</option>
-            <option value="Vara5">Vara com Molinete</option>
+            <option value="Vara Longa:">Vara Longa</option>
+            <option value="Vara Profissional:">Vara Profissional</option>
+            <option value="Vara Infantil:">Vara Infantil</option>
+            <option value="Vara de Bambu:">Vara de Bambu</option>
+            <option value="Vara com Molinete:">Vara com Molinete</option>
         </select>
         <h3>Iscas</h3>
         <select class="form-select" aria-label="Default select example" id="selectIsca">
             <option selected>Selecione uma Isca</option>
-            <option value="Isca1">Isca Tucunaré</option>
-            <option value="Isca2">Isca Whisky</option>
-            <option value="Isca3">Isca Bola</option>
-            <option value="Isca4">Isca Irmão do bola</option>
-            <option value="Isca5">Isca Sushi</option>
+            <option value="Isca Tucunaré:">Isca Tucunaré</option>
+            <option value="Isca Whisky:">Isca Whisky</option>
+            <option value="Isca Bola:">Isca Bola</option>
+            <option value="Isca Irmão do bola:">Isca Irmão do bola</option>
+            <option value="Isca Sushi:">Isca Sushi</option>
         </select>
         <h3>Redes</h3>
         <select class="form-select" aria-label="Default select example" id="selectRede">
             <option selected>Selecione uma Rede</option>
-            <option value="Rede1">Rede Gato</option>
-            <option value="Rede2">Rede Barriga</option>
-            <option value="Rede3">Rede Enguia</option>
-            <option value="Rede4">Rede Água-Viva</option>
-            <option value="Rede5">Rede Emaranhada</option>
+            <option value="Rede Gato:">Rede Gato</option>
+            <option value="Rede Barriga:">Rede Barriga</option>
+            <option value="Rede Enguia:">Rede Enguia</option>
+            <option value="Rede Água-Viva:">Rede Água-Viva</option>
+            <option value="Rede Emaranhada:">Rede Emaranhada</option>
         </select>
         <h3>Boias</h3>
         <select class="form-select" aria-label="Default select example" id="selectBoia">
             <option selected>Selecione uma Boia</option>
-            <option value="Boia1">Boia Maça Verde</option>
-            <option value="Boia2">Boia Coxinha</option>
-            <option value="Boia3">Boia Arpão</option>
-            <option value="Boia4">Boia Butijão</option>
-            <option value="Boia5">Boia Abelha</option>
+            <option value="Boia Maça Verde:">Boia Maça Verde</option>
+            <option value="Boia Coxinha:">Boia Coxinha</option>
+            <option value="Boia Arpão:">Boia Arpão</option>
+            <option value="Boia Butijão:">Boia Butijão</option>
+            <option value="Boia Abelha:">Boia Abelha</option>
         </select>
         <h3>Anzol</h3>
         <select class="form-select" aria-label="Default select example" id="selectAnzol">
             <option selected>Selecione um Anzol</option>
-            <option value="Anzol1">Anzol Bob</option>
-            <option value="Anzol2">Anzol Triplex</option>
-            <option value="Anzol3">Anzol Básico</option>
-            <option value="Anzol4">Anzol Doze Mola</option>
-            <option value="Anzol5">Anzol Barrigudo</option>
+            <option value="Anzol Bob:">Anzol Bob</option>
+            <option value="Anzol Triplex:">Anzol Triplex</option>
+            <option value="Anzol Básico:">Anzol Básico</option>
+            <option value="Anzol Doze Mola:">Anzol Doze Mola</option>
+            <option value="Anzol Barrigudo:">Anzol Barrigudo</option>
         </select>
-        <div>
+        <div class="dist2">
             <button class="btn btn-success" type="button" onclick="calcularTotal()">Fazer pedido</button>
             <button class="btn btn-outline-secondary" type="button" onclick="limpar()">Limpar</button>
         </div>
-        <div>
+        <div class="dist">
             <span class="badge bg-dark">Total:</span>
             <span class="badge bg-danger" id="resultado"></span>
         </div>
-        <div id="pedido-pronto" class="pronto">
+    </div>
+        <div class="box2" id="pedido-pronto" class="pronto">
             <h4>Vara de Pesca</h4>
             <p id="Vara-pronto"></p>
             <br>
