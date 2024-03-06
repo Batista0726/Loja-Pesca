@@ -17,12 +17,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
 }
 
 #select-div {
     display: none;
     flex-direction: column;
     gap: 2vh;
+    color: white;
 }
 
 .badge {
@@ -55,7 +57,7 @@ body {
     width: 100%;
     border: none;
     border-radius: 999px;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .error-btn:hover {

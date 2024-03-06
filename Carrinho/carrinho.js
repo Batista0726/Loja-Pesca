@@ -119,55 +119,56 @@ function calcularTotal(){
             Boia = 6.00;
         break;
         case "Boia4":
-            total =  total + 7.90;
-            Boia = 7.90;
+            total =  total + 8.00;
+            Boia = 8.00;
             break;
         case "Boia5":
-            total =  total + 15.90;
-            Boia = 15.90;
+            total =  total + 6.00;
+            Boia = 6.00;
         break;
 
     }
     switch (selectAnzol.value) {
         case "Anzol1":
-            total =  total + 19.90;
-            Anzol = 19.90;
+            total =  total + 5.00;
+            Anzol = 5.00;
             break;
         case "Anzol2":
-            total =  total + 7.90;
-            Anzol = 7.90;
+            total =  total + 7.00;
+            Anzol = 7.00;
             break;
         case "Anzol3":
-            total =  total + 15.90;
-            Anzol = 15.90;
+            total =  total + 4.00;
+            Anzol = 4.00;
         break;
         case "Anzol4":
-            total =  total + 7.90;
-            Anzol = 7.90;
+            total =  total + 10.00;
+            Anzol = 10.00;
             break;
         case "Anzol5":
-            total =  total + 15.90;
-            Anzol = 15.90;
+            total =  total + 8.00;
+            Anzol = 8.00;
         break;
 
     }
-    document.getElementById("pedido-pronto").style.display = "block" 
-    document.getElementById("RemedioAI-pronto").textContent = selectAI.value + " R$ " + AI.toFixed(2); 
-    document.getElementById("RemedioC-pronto").textContent = selectC.value + " R$ " + C.toFixed(2); 
-    document.getElementById("RemedioAA-pronto").textContent = selectAA.value + " R$ " + AA.toFixed(2);
-    document.getElementById("RemedioD-pronto").textContent = selectD.value + " R$ " + D.toFixed(2); 
-    document.getElementById("RemedioI-pronto").textContent = selectI.value + " R$ " + I.toFixed(2);  
+    document.getElementById("pedido-pronto").style.display = "flex"; 
+    document.getElementById("Vara-pronto").textContent = selectVara.value + " R$ " + Vara.toFixed(2); 
+    document.getElementById("Isca-pronto").textContent = selectIsca.value + " R$ " + Isca.toFixed(2); 
+    document.getElementById("Rede-pronto").textContent = selectRede.value + " R$ " + Rede.toFixed(2);
+    document.getElementById("Boia-pronto").textContent = selectBoia.value + " R$ " + Boia.toFixed(2); 
+    document.getElementById("Anzol-pronto").textContent = selectAnzol.value + " R$ " + Anzol.toFixed(2);  
     resultadoSpan.textContent = "R$" + total.toFixed(2);
+    
 }
 
 function limpar(){
     document.getElementById("pedido-pronto").style.display = "none";
-    document.getElementById("selects-div").style.display = "none";
+    document.getElementById("select-div").style.display = "none";
     document.getElementById("exampleFormControlInput1").value = "";
     document.getElementById("resultado").value = "";
-    document.getElementById("select-cardiologico").value = "Selecione seu medicamento";
-    document.getElementById("select-anti-alergico").value = "Selecione seu medicamento";
-    document.getElementById("select-anti-inflamatorio").value = "Selecione seu medicamento";
-    document.getElementById("select-Dores").value = "Selecione seu medicamento";
-    document.getElementById("select-Inchaco").value = "Selecione seu medicamento";
+    document.getElementById("selectVara").value = "Selecione sua Vara de Pesca";
+    document.getElementById("selectIsca").value = "Selecione sua Isca";
+    document.getElementById("selectRede").value = "Selecione sua Rede de Pesca";
+    document.getElementById("selectBoia").value = "Selecione sua Boia";
+    document.getElementById("selectAnzol").value = "Selecione seu Anzol";
 }

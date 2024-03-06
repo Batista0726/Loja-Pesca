@@ -29,7 +29,7 @@
         <label for="exampleFormControlInput1" class="form-label">Nome:</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Insira seu nome">
     </div>
-    <button type="button" class="btn btn-outline-dark" onclick="comecar()">Começar</button>
+    <button type="button" class="btn btn-dark" onclick="comecar()">Começar</button>
 
     <div id="select-div">
         <h2>Olá <span id="nomePrint"></span>, vamos começar a escolher seu Kit para Pesca</h2>
@@ -83,9 +83,27 @@
             <button class="btn btn-outline-secondary" type="button" onclick="limpar()">Limpar</button>
         </div>
         <div>
-            <span class="badge bg-primary">Total:</span>
-            <span class="badge bg-secondary" id="resultado"></span>
+            <span class="badge bg-dark">Total:</span>
+            <span class="badge bg-danger" id="resultado"></span>
         </div>
+        <div id="pedido-pronto" class="pronto">
+            <h4>Vara de Pesca</h4>
+            <p id="Vara-pronto"></p>
+            <br>
+            <h4>Isca</h4>
+            <p id="Isca-pronto"></p>
+            <br>
+            <h4>Rede</h4>
+            <p id="Rede-pronto"></p>
+            <br>
+            <h4>Boia</h4>
+            <p id="Boia-pronto"></p>
+            <br>
+            <h4>Anzol</h4>
+            <p id="Anzol-pronto"></p>
+            <br>
+        </div>
+    </div>
     </div>
 </body>
 
