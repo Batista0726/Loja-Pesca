@@ -1,3 +1,5 @@
+var totalGlobal;
+
 function comecar() {
     var nome = document.getElementById("exampleFormControlInput1").value;
     show(nome)
@@ -6,13 +8,16 @@ function comecar() {
 function show(nome) {
     document.getElementById("nomePrint").textContent = nome;
     var div = document.getElementById("select-div");
+    var zap = document.getElementById("zap");
     if (nome && nome.trim() !== "") {
         div.style.display = "flex";
+        zap.style.display = "flex";
         document.getElementById("exampleFormControlInput1").style.background = "nome";
     } else {
         document.getElementById("error").style.display = "flex";
     }
 }
+
 
 function fechar() {
     document.getElementById("error").style.display = "none";
@@ -158,6 +163,7 @@ function calcularTotal(){
     document.getElementById("Boia-pronto").textContent = selectBoia.value + " R$ " + Boia.toFixed(2); 
     document.getElementById("Anzol-pronto").textContent = selectAnzol.value + " R$ " + Anzol.toFixed(2);  
     resultadoSpan.textContent = "R$" + total.toFixed(2);
+    totalGlobal = "R$" + total.toFixed(2);
     
 }
 
@@ -171,4 +177,27 @@ function limpar(){
     document.getElementById("selectRede").value = "Selecione sua Rede de Pesca";
     document.getElementById("selectBoia").value = "Selecione sua Boia";
     document.getElementById("selectAnzol").value = "Selecione seu Anzol";
+}
+
+const DataAtual = new Date();
+
+const dia = DataAtual.getDate();
+const mes = DataAtual.getMonth() + 1;
+const ano = DataAtual.getFullYear();
+const data = dia + "/" + mes + "/" + ano
+
+function conferirMensagemWhatsApp(){
+
+    document.getElementById("total").textContent = totalGlobal;
+}
+
+function enviar(){
+    if (totalGlobal != ""){
+
+        var numeroTelefone = "5541991760161";
+
+        var linkWhatsApp = "https://wa.me/" + numeroTelefone + "?text=Compra: " + totalGlobal + " - " + data
+
+        window.open(linkWhatsApp, "_blank")
+    }
 }
