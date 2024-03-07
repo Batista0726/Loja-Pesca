@@ -196,7 +196,7 @@ function enviar(){
 
         var numeroTelefone = "5541991760161";
 
-        var linkWhatsApp = "https://wa.me/" + numeroTelefone + "?text=Compra: " + totalGlobal + " - " + data
+        var linkWhatsApp = "https://wa.me/" + numeroTelefone + "?text=Total da Compra: " + totalGlobal + " - " + "Dia da Compra: " + data
 
         window.open(linkWhatsApp, "_blank")
     }
