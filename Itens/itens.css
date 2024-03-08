@@ -42,9 +42,18 @@ h1, h2 {
     height: 300px;
 }
 
-@media (width >=1024px) {
+@media (width <=1024px) {
     .d-block{
         width: 500px !important;
         height: 500px !important;
-    } 
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
+    .Vara3{
+        transform: translateX(-160px);
+    }
+    .Vara4{
+        transform: translateX(0px);
+        transform: translateY(-60px);
+    }
 }
